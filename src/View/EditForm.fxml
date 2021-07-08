@@ -9,7 +9,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditFormController">
    <children>
       <MenuBar layoutX="29.0" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -17,11 +16,13 @@
           <Menu mnemonicParsing="false" text="File">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#mnuItemNew_OnAction" text="New" />
-                  <MenuItem mnemonicParsing="false" text="Open" />
-                  <MenuItem mnemonicParsing="false" text="Save" />
-                  <MenuItem mnemonicParsing="false" text="Save As" />
+                  <MenuItem mnemonicParsing="false" onAction="#mnuItemOpen_OnAction" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#mnuItemSave_OnAction" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#mnuItemSaveAs_OnAction" text="Save As" />
+                  <MenuItem mnemonicParsing="false" onAction="#mnuItemPageSetup_OnAction" text="Page Setup" />
+                  <MenuItem mnemonicParsing="false" onAction="#mnuItemPrint_OnAction" text="Print" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Exit" />
+                  <MenuItem mnemonicParsing="false" onAction="#mnuItemSaveAs_OnAction" text="Exit" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
@@ -49,6 +50,16 @@
             <TextField fx:id="txtSearch" layoutY="9.0" prefHeight="25.0" prefWidth="187.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
             <Button layoutX="199.0" layoutY="6.0" mnemonicParsing="false" onAction="#btnFindNew_OnAction" text="&gt;" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="5.0" />
             <Button layoutX="242.0" layoutY="6.0" mnemonicParsing="false" onAction="#btnFindPrevious_OnAction" text="&lt;" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="5.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pneFind1" layoutX="234.0" layoutY="309.0" prefHeight="67.0" prefWidth="278.0" style="-fx-background-color: grey;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="txtSearch1" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="187.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+            <TextField fx:id="txtReplace" layoutX="14.0" layoutY="39.0" prefHeight="25.0" prefWidth="187.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" />
+            <Button layoutX="196.0" layoutY="6.0" mnemonicParsing="false" onAction="#btnFindNew_OnAction1" prefHeight="24.0" prefWidth="36.0" text="&gt;" AnchorPane.topAnchor="6.0" />
+            <Button layoutX="238.0" layoutY="6.0" mnemonicParsing="false" onAction="#btnFindPrevious_OnAction1" prefHeight="24.0" prefWidth="36.0" text="&lt;" AnchorPane.topAnchor="6.0" />
+            <Button layoutX="196.0" layoutY="38.0" mnemonicParsing="false" onAction="#btnReplace_OnAction" prefHeight="24.0" prefWidth="36.0" text="R" />
+            <Button layoutX="238.0" layoutY="38.0" mnemonicParsing="false" onAction="#btnReplaceAll_OnAction" text="RA" />
          </children>
       </AnchorPane>
    </children>
