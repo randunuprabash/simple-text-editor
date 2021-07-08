@@ -220,15 +220,19 @@ public class EditFormController {
     }
 
     public void mnuItemCopy_OnAction(ActionEvent actionEvent) {
-//        txtEditor.se
-
+        txtEditor.copy();
     }
 
     public void mnuItemPaste_OnAction(ActionEvent actionEvent) {
+        txtEditor.paste();
     }
 
     public void mnuItemSelectAll_OnAction(ActionEvent actionEvent) {
         txtEditor.selectAll();
+    }
+
+    public void mnuItemCut_OnAction(ActionEvent actionEvent) {
+        txtEditor.cut();
     }
 }
 
