@@ -233,6 +233,7 @@ public class EditFormController {
 
     public void mnuItemCut_OnAction(ActionEvent actionEvent) {
         txtEditor.cut();
+
     }
 }
 
