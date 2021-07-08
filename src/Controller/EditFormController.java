@@ -34,7 +34,7 @@ public class EditFormController {
     public void initialize(){
         pneFind.setVisible(false);
         pneFind1.setVisible(false);
-        this.printerJob = PrinterJob.createPrinterJob();
+        this.printerJob=PrinterJob.createPrinterJob();
 
         txtSearch.textProperty().addListener((observable, oldValue, newValue) -> {
             //FXUtil.highlightOnTextArea(txtEditor,newValue, Color.web("yellow", 0.8));
@@ -190,7 +190,6 @@ public class EditFormController {
     public void mnuItemPageSetup_OnAction(ActionEvent actionEvent) {
         printerJob.showPageSetupDialog(txtEditor.getScene().getWindow());
     }
-
     public void mnuItemPrint_OnAction(ActionEvent actionEvent) {
         printerJob.showPrintDialog(txtEditor.getScene().getWindow());
         printerJob.printPage(txtEditor.lookup("Text"));
@@ -218,6 +217,18 @@ public class EditFormController {
             }
         }
 
+    }
+
+    public void mnuItemCopy_OnAction(ActionEvent actionEvent) {
+//        txtEditor.se
+
+    }
+
+    public void mnuItemPaste_OnAction(ActionEvent actionEvent) {
+    }
+
+    public void mnuItemSelectAll_OnAction(ActionEvent actionEvent) {
+        txtEditor.selectAll();
     }
 }
 

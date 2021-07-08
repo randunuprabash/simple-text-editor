@@ -28,13 +28,13 @@
           <Menu mnemonicParsing="false" text="Edit">
             <items>
               <MenuItem mnemonicParsing="false" text="Cut" />
-                  <MenuItem mnemonicParsing="false" text="Copy" />
-                  <MenuItem mnemonicParsing="false" text="Paste" />
+                  <MenuItem mnemonicParsing="false" onAction="#mnuItemCopy_OnAction" text="Copy" />
+                  <MenuItem mnemonicParsing="false" onAction="#mnuItemPaste_OnAction" text="Paste" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem mnemonicParsing="false" onAction="#mnuItemFind_OnAction" text="Find" />
                   <MenuItem mnemonicParsing="false" onAction="#mnuItemReplace_OnAction" text="Replace" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Select All" />
+                  <MenuItem mnemonicParsing="false" onAction="#mnuItemSelectAll_OnAction" text="Select All" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
