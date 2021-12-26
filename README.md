@@ -6,10 +6,10 @@ A Simple JavaFX Application to Demonstrate a Simple Text document with Several f
 
 ##### **How to Use this Repo**
 1. Clone the repository first
-   add origin https://github.com/RandunuPrabash806/Simple-Test-Editor.git
+   https://github.com/randunuprabash/simple-text-editor.git
 2. once cloned, open the repository from the Intellij IDEA
-
-3.Build and Run
+3. Required Jfoenix 8.0.1 or above version
+4. Build and Run
 
 #### Licenese
 
